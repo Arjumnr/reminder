@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:text="Waktu Pertemuan"
         android:padding="5dp"
-        android:textColor="@color/colorPurple"
+        android:textColor="@color/blue"
         android:textStyle="bold"
         android:background="#fff"
         android:textSize="16sp"/>
     <LinearLayout
         android:id="@+id/jm"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -27,9 +27,9 @@
         <TimePicker
             android:id="@+id/setjam"
             android:layout_width="match_parent"
+            android:background="@drawable/bg_ui"
             android:layout_height="wrap_content"
             android:layout_marginTop="6sp"
-
             android:text="@string/app_name"
             android:textSize="15sp"
             android:textColor="@color/colorPrimaryDark"
@@ -42,24 +42,24 @@
         android:gravity="center"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/atur_waktu"
+            android:id="@+id/id_atur_waktu"
             android:layout_width="100sp"
             android:layout_height="46sp"
             android:layout_marginLeft="16sp"
             android:layout_marginRight="16sp"
             android:text="Pilih"
-            android:background="@color/abu"
+            android:background="#E60E57"
             android:textColor="@color/white"
             android:layout_gravity="center"/>
 
         <Button
-            android:id="@+id/batal"
+            android:id="@+id/id_batal_waktu"
             android:layout_width="100sp"
             android:layout_height="46sp"
             android:layout_marginLeft="16sp"
             android:layout_marginRight="16sp"
             android:text="Batal"
-            android:background="#E60E57"
+            android:background="@color/black"
             android:textColor="#F7F8F8"
             android:layout_gravity="center"/>
     </LinearLayout>

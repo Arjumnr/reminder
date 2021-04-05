@@ -6,28 +6,35 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="Reminder"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Reminder">
-        <activity android:name=".MainActivityDosen"></activity>
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".splashScreen"></activity>
+        <activity android:name=".recycle_history_dosen" />
+        <activity android:name=".recycle_history_mhs" />
+        <activity android:name=".recycle_info_jadwal_dosen" />
+        <activity android:name=".recycleDosen" />
+        <activity android:name=".MainActivityDosen" />
         <activity android:name=".edit_profil" />
         <activity android:name=".recycle" />
         <activity android:name=".profil" />
         <activity android:name=".regis" />
         <activity android:name=".MainActivity" />
         <activity android:name=".input_jadwal" />
-        <activity
-            android:name=".login"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

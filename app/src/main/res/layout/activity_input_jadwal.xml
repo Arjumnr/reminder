@@ -46,77 +46,122 @@
                     android:layout_marginVertical="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="JADWAL"
+                    android:text="INPUT JADWAL"
+                    android:textColor="@drawable/bg_ui"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="20dp"/>
 
-                <TextView
-                    android:drawableStart="@drawable/ic_customer_service"
-                    android:id="@+id/mhs"
-                    android:layout_width="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="20sp"
-                    android:text="Nama Dosen"/>
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient">
+                        <TextView
+                            android:id="@+id/id_SPdosen"
+                            android:drawableStart="@drawable/ic_customer_service"
+                            android:drawablePadding="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Nama Dosen : "
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <Spinner
+                            android:id="@+id/id_naDosen_dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
                 <TextView
                     android:drawableStart="@drawable/ic_timedate"
                     android:drawablePadding="5dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_gradient"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Masukkan  "/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="20sp"
-                    android:text="Tanggal Pertemuan"/>
-                <TextView
-                    android:drawableStart="@drawable/ic_timedate"
-                    android:drawablePadding="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="20sp"
-                    android:text="Waktu Pertemuan"/>
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Pertemuan"
+                        android:textColor="@color/abu"
+                        android:id="@+id/id_date" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:paddingTop="15dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/abu"
+                        android:text="Waktu Pertemuan"
+                        android:id="@+id/id_time" />
+                </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_ui"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:text="SAVE"
                     android:textSize="20sp"
+                    android:id="@+id/id_btn_save"
                     android:textStyle="bold"
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/jm"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-                    <Button
-                        android:id="@+id/tolak"
-                        android:layout_width="100sp"
-                        android:layout_height="46sp"
-                        android:layout_marginLeft="16sp"
-                        android:layout_marginRight="16sp"
-                        android:text="TOLAK"
-                        android:background="@color/abu"
-                        android:textColor="@color/white"
-                        android:layout_gravity="center"/>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/jm"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <Button-->
+<!--                        android:id="@+id/tolak"-->
+<!--                        android:layout_width="100sp"-->
+<!--                        android:layout_height="46sp"-->
+<!--                        android:layout_marginLeft="16sp"-->
+<!--                        android:layout_marginRight="16sp"-->
+<!--                        android:text="TOLAK"-->
+<!--                        android:background="@color/abu"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:layout_gravity="center"/>-->
 
-                    <Button
-                        android:id="@+id/terima"
-                        android:layout_width="100sp"
-                        android:layout_height="46sp"
-                        android:layout_marginLeft="16sp"
-                        android:layout_marginRight="16sp"
-                        android:text="TERIMA"
-                        android:background="#E60E57"
-                        android:textColor="#F7F8F8"
-                        android:layout_gravity="center"/>
-                </LinearLayout>
+<!--                    <Button-->
+<!--                        android:id="@+id/terima"-->
+<!--                        android:layout_width="100sp"-->
+<!--                        android:layout_height="46sp"-->
+<!--                        android:layout_marginLeft="16sp"-->
+<!--                        android:layout_marginRight="16sp"-->
+<!--                        android:text="TERIMA"-->
+<!--                        android:background="#E60E57"-->
+<!--                        android:textColor="#F7F8F8"-->
+<!--                        android:layout_gravity="center"/>-->
+<!--                </LinearLayout>-->
 
             </LinearLayout>
 

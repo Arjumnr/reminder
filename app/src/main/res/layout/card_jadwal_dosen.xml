@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="7dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/id_info_jadwal_dosen">
+    <LinearLayout
+        android:paddingStart="5dp"
+        android:gravity="center"
+        android:background="@drawable/bg_gradient_btn"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_userbook"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_btn"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Pengajuan"
+                android:textColor="@drawable/bg_ui"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/id_nama_mhs_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Nama Mahasiswa"/>
+
+            <TextView
+                android:id="@+id/id_tgl_pertemuan_dsn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Tanggal Pertemuan" />
+            <TextView
+                android:id="@+id/id_waktu_pertemuan_dsn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Waktu Pertemuan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_tgl_penginputan_dsn_info"
+                android:text="tgl penginputan"
+                android:gravity="right"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,11 +1,35 @@
 package com.apk.reminder.Model;
 
-public class jadwal {
-       private String namaDosen;
-       private String tglPertemuan;
-       private String waktuPertemuan;
-       private String status;
-       private String tglPenginputan;
+public class dosenModel {
+    private String idMahasiswa;
+    private String namamhs;
+    private String namaDosen;
+    private String tglPertemuan;
+    private String waktuPertemuan;
+    private String status;
+    private String tglPenginputan;
+
+    public dosenModel(){
+
+    }
+
+
+
+    public String getNamamhs() {
+        return namamhs;
+    }
+
+    public void setNamamhs(String namamhs) {
+        this.namamhs = namamhs;
+    }
+
+    public String getIdMahasiswa() {
+        return idMahasiswa;
+    }
+
+    public void setIdMahasiswa(String idMahasiswa) {
+        this.idMahasiswa = idMahasiswa;
+    }
 
     public String getNamaDosen() {
         return namaDosen;
@@ -46,4 +70,5 @@ public class jadwal {
     public void setTglPenginputan(String tglPenginputan) {
         this.tglPenginputan = tglPenginputan;
     }
-}
+
+    }

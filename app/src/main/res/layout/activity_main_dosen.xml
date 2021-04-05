@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".MainActivityDosen">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivityDosen">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -50,7 +51,7 @@ tools:context=".MainActivityDosen">
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="170dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -60,7 +61,7 @@ tools:context=".MainActivityDosen">
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/btn_jadwal"
+                        android:id="@+id/btn_konfirmasi_jadwal"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:src="@drawable/ic_jadwalbooking"/>
@@ -84,7 +85,7 @@ tools:context=".MainActivityDosen">
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="10dp"
                 android:id="@+id/card_booking"
@@ -92,7 +93,7 @@ tools:context=".MainActivityDosen">
                 <LinearLayout
                     android:padding="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/btn_info_jadwal"
@@ -106,7 +107,15 @@ tools:context=".MainActivityDosen">
                         android:textSize="16sp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Info Jadwal"/>
+                        android:text="Info"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/aclonica"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:text="Jadwal" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -118,7 +127,7 @@ tools:context=".MainActivityDosen">
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
@@ -130,10 +139,11 @@ tools:context=".MainActivityDosen">
                     <ImageView
                         android:id="@+id/btn_profil"
                         android:layout_width="match_parent"
+                        android:paddingTop="1dp"
                         android:layout_height="100dp"
                         android:src="@drawable/ic_user"/>
                     <TextView
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -144,7 +154,7 @@ tools:context=".MainActivityDosen">
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="10dp"
                 android:id="@+id/history"
@@ -158,9 +168,10 @@ tools:context=".MainActivityDosen">
                         android:id="@+id/btn_history"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
+                        android:paddingTop="1dp"
                         android:src="@drawable/ic_history"/>
                     <TextView
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"

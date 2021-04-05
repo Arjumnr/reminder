@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".recycle">
+    android:background="@drawable/bg_gradient"
+    tools:context=".recycleDosen">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/id_recycle_mhs">
+        android:id="@+id/id_recycle_history_mhs">
 
     </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

@@ -3,7 +3,7 @@ package com.apk.reminder.Model;
 public class User {
     private String id, profesi, name, email, no_hp, password,status;
 
-    public User(String string, String id, String profesi, String name, String email, String no_hp, String password) {
+    public User( String id, String profesi, String name, String email, String no_hp, String password, String status) {
         this.id = id;
         this.profesi = profesi;
         this.name = name;
@@ -13,13 +13,9 @@ public class User {
         this.status = status;
     }
 
-    public User(String id, String profesi, String username, String email, String no_hp, String password) {
 
-    }
 
-    public static void setText(String name) {
-
-    }
+    public User(){}
 
     public String getId() { return id; }
     public String getProfesi() { return profesi; }

@@ -20,7 +20,8 @@ public class DBuser extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         final String SQL_CREATE_ENTRIES = "CREATE TABLE "
         + FieldUser.NAMA_TABLE + " ( "
-        + FieldUser.ID + TEXT_TYPE
+        + FieldUser.ID + TEXT_TYPE + ","
+        + FieldUser.NAME+ TEXT_TYPE
         + " ) ";
 
         db.execSQL( SQL_CREATE_ENTRIES );

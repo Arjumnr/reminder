@@ -62,7 +62,6 @@ public class regis extends AppCompatActivity {
                 }
             }
 
-
         });
 
 
@@ -105,7 +104,6 @@ public class regis extends AppCompatActivity {
                         params.put("email", email.getText().toString());
                         params.put("no_hp", nohp.getText().toString());
                         params.put("password", pass.getText().toString());
-
 
 
                         return params;
